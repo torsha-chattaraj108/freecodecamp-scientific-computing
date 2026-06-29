@@ -11,7 +11,7 @@ def sqrt_bisection(sqr_target,tolerance=1e-7,max_iterations=100):
         root=1
         print(f'The square root of {sqr_target} is 1')
     else:
-#square root foe positive numbers
+#square root for positive numbers
         low=0
         high=max(1,sqr_target)
         root=None
