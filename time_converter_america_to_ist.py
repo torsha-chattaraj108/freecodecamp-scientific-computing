@@ -5,9 +5,7 @@ def time_converter(start,us_tz,day_of_week=None,is_dst=False):
              'PT':13.5,
              'AST':9.5,
              'AKST':8.5,
-             'AKDT':7.5,
              'HST':5.5,
-             'HDT':6.5,
              'ChST':-4.5
              }
     week=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
