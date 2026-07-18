@@ -8,11 +8,12 @@ def time_converter(start,us_tz,day_of_week=None,is_dst=False):
              'HST':5.5,
              'ChST':-4.5
              }
+    dst_timezones = ['ET', 'CT', 'MT', 'PT', 'AST', 'AKST']
     week=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
     s_time,am_pm=start.split(' ')
     s_hour,s_min=s_time.split(':')
     offset_value=tz_list[us_tz]
-    if is_dst:
+    if is_dst and us_tz in dst_timezones:
         offset_value-=1.0
     u_hour=int(offset_value)
     u_min=round((offset_value%1)*60)
