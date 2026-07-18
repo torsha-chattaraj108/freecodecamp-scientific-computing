@@ -39,7 +39,6 @@ def time_converter(start,us_tz,day_of_week=None,is_dst=False):
     else:
         f_hour_12=f_hour
     f_min=f'{t_min:02d}'
-    days=t_hour//24
     day_string=''
     if days==1:
         day_string=f' (next day)'
